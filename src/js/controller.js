@@ -82,6 +82,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const testing = function(){
+  console.log("Deploy success");
+}
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -90,5 +94,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   bookmarksView.addHandlerRender(controlBookmarks);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  testing();
 };
 init();
